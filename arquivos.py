@@ -63,9 +63,13 @@ mouse = Produtos(codigos.arquivo[4],  produtos.arquivo[4], int(limites.arquivo[4
 impressora = Produtos(codigos.arquivo[5],  produtos.arquivo[5], int(limites.arquivo[5]), int(estoques.arquivo[5]))
 listaDeProdutos = [pendrive, hd, monitor, teclado, mouse, impressora]
 
+print('1 - Listar estoque')
+print('2 - Verificar estoque')
+print('3 - Vender produto')
+print('4 - Comprar produto\n')
 
 while True:
-    x = int(input())
+    x = int(input('\nInsira a ação desejada: '))
     if x == 1:
         listarEstoque()
     elif x == 2:
